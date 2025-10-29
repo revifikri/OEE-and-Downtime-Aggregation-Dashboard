@@ -51,3 +51,23 @@ This system demonstrates end-to-end IIoT data integration, from data processing 
 |                 | Chart.js (optional)       | Visual OEE trend representation                       |
 | **Data Format** | JSON                      | Input and output data interchange                     |
 | **Protocol**    | REST API                  | For communication between backend and frontend        |
+
+
+## 📊 Dashboard Overview
+### Downtime Dashboard
+- Filter by equipment
+- Summary of total downtime
+- Detailed table of each record (equipment, date, reason, duration)
+
+### OEE Dashboard (/dashboard)
+- Overall OEE metrics
+- Average per-equipment OEE table
+- Daily OEE performance logs
+- Elegant dark theme for better readability
+
+## Key Learnings
+- Designed modular data pipelines for production & status data.
+- Practiced REST API integration between backend (Node.js) and frontend (JS).
+- Built data visualization tools for industrial analytics.
+- Applied manufacturing metrics (OEE, Availability, Performance, Quality).
+- Strengthened understanding of Industry 4.0 data flow — from sensors to dashboard.
