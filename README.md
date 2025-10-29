@@ -3,7 +3,7 @@
 A full-stack Industry 4.0 web application that computes, aggregates, and visualizes machine downtime and Overall Equipment Effectiveness (OEE) from raw production and status data.
 This system demonstrates end-to-end IIoT data integration, from data processing (Node.js, REST API) to front-end visualization (HTML, CSS, JavaScript) — suitable for manufacturing efficiency analysis and real-time factory monitoring.
 
-## Features
+## 🚀 Features
 ### Downtime Aggregation
   - Merge automatic (status.json) and manual (manual_status.json) logs.
   - Normalize timestamps with Day.js.
@@ -40,7 +40,7 @@ This system demonstrates end-to-end IIoT data integration, from data processing 
     - Equipment averages
     - Overall summary
 
-## Tech Stack
+## ⚙️ Tech Stack
 | Layer           | Technology                | Purpose                                               |
 | --------------- | ------------------------- | ----------------------------------------------------- |
 | **Backend**     | Node.js                   | Server-side computation and REST API                  |
@@ -65,7 +65,7 @@ This system demonstrates end-to-end IIoT data integration, from data processing 
 - Daily OEE performance logs
 - Elegant dark theme for better readability
 
-## Key Learnings
+## 🧩 Key Learnings
 - Designed modular data pipelines for production & status data.
 - Practiced REST API integration between backend (Node.js) and frontend (JS).
 - Built data visualization tools for industrial analytics.
