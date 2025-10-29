@@ -1,0 +1,34 @@
+:root{
+  --bg:#0b0f14; --card:#0f1620; --accent:#1ea7ff; --muted:#98a6b3; --white:#e9f0f7;
+  --table-head:#111827; --panel:#0d1116;
+  --mono: "Inter", "Segoe UI", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%; margin:0; font-family:var(--mono); background:linear-gradient(#071018,#041018)}
+.topbar{
+  padding:18px 24px; display:flex; justify-content:space-between; align-items:center;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+.topbar h1{color:var(--accent); margin:0; font-size:20px}
+.controls{display:flex; gap:12px; align-items:center}
+.controls select, .controls button { padding:6px 10px; border-radius:6px; border:1px solid rgba(255,255,255,0.06); background:#0b1014; color:var(--white) }
+.controls button{ background:#1f8b4d; cursor:pointer }
+
+.container{max-width:1200px; margin:18px auto; padding:12px}
+.card{background:var(--card); padding:16px; border-radius:8px; margin-bottom:16px; box-shadow:0 8px 20px rgba(2,6,10,0.6)}
+
+h2{margin:0 0 12px 0; color:var(--white)}
+
+table{width:100%; border-collapse:collapse; font-size:13px; background:#071018}
+thead th {
+  background:#0c1220; color:var(--accent); padding:10px; text-align:center; border-bottom:1px solid rgba(255,255,255,0.04)
+}
+tbody td { padding:10px; border-bottom:1px solid rgba(255,255,255,0.03); color:#d8e7f3; text-align:center }
+tbody tr:nth-child(even){ background:rgba(255,255,255,0.01) }
+
+/* small table for equipment averages & overall */
+.small-table { width: 48%; display:inline-block; vertical-align:top; margin-right:2%; }
+.small-table table { width:100%; }
+.small-table th, .small-table td { padding:8px; font-size:14px }
+
+#oeeChart { background: #ffffff; border-radius:6px; padding:6px }

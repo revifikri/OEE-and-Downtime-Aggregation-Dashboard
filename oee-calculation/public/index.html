@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — OEE & Downtime</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>Downtime & OEE Monitoring</h1>
+    <div class="controls">
+      <label>Filter equipment:
+        <select id="equipFilter"><option value="">All Equipments</option></select>
+      </label>
+      <button id="refreshBtn">Refresh</button>
+      <label class="chart-toggle"><input id="toggleChart" type="checkbox" /> Show chart</label>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" id="overviewRow">
+      <h2>Overall Overview</h2>
+      <div id="overallTableContainer"></div>
+    </section>
+
+    <section class="card" id="overviewRow">
+      <h2>Average OEE per Equipment</h2>
+      <div id="equipAveragesContainer"></div>
+    </section>
+
+    <section class="card">
+      <h2>OEE Daily (per equipment per day)</h2>
+      <table id="oeeDailyTable">
+        <thead>
+          <tr>
+            <th>Equipment</th>
+            <th>Date</th>
+            <th>A</th>
+            <th>P</th>
+            <th>Q</th>
+            <th>OEE</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
